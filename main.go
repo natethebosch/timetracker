@@ -174,6 +174,10 @@ func loadConfig(fileName string) (*Config, error) {
 
 	cfg := &Config{}
 
+	if len(data) == 0 {
+		return cfg, nil
+	}
+
 	err = json.Unmarshal(data, cfg)
 	if err != nil {
 		return nil, errors.New("Load Config: " + err.Error())
