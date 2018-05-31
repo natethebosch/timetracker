@@ -2,6 +2,14 @@
 
 This is a fun little command line tool to track what you've done through out the day.
 
+## Installation
+
+```
+# clone or download the repo
+$ go build -o timetrack ./main.go
+$ cp timetrack <some-folder-in-your-$PATH>
+```
+
 ## Usage
 ```
 $ timetrack --help
